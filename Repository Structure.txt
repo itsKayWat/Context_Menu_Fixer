@@ -1,0 +1,5 @@
+ContextMenuFixer/
+├── fix_right_click_menu.py
+├── README.md
+├── README.html
+└── registry_backup/ (Generated after running the script)
