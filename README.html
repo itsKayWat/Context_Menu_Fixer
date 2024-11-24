@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ContextMenuFixer</title>
+    <style>
+        body {
+            background-color: #2e2e2e;
+            color: #dcdcdc;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        a {
+            color: #1e90ff;
+        }
+        pre {
+            background-color: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            color: #dcdcdc;
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>ContextMenuFixer</h1>
+    <p><strong>ContextMenuFixer</strong> is a Python tool designed to repair and restore Windows right-click context menus by fixing registry entries, clearing icon caches, and running system file checks. Easily restore your context menus with administrative privileges.</p>
+
+    <h2>Why This Script Was Made</h2>
+    <p>Over time, Windows context menus can become cluttered or malfunction due to corrupted registry entries, incomplete installations of software, or system file issues. These problems can hinder productivity and user experience. <strong>ContextMenuFixer</strong> was created to address these issues efficiently.</p>
+
+    <h2>Purpose</h2>
+    <p>The purpose of <strong>ContextMenuFixer</strong> is to:</p>
+    <ul>
+        <li>Backup current registry settings related to context menus.</li>
+        <li>Apply necessary registry fixes to restore right-click functionality.</li>
+        <li>Clear the Windows icon cache to ensure icons display correctly.</li>
+        <li>Run the System File Checker to repair corrupted system files.</li>
+        <li>Provide a seamless experience for users to fix context menu issues without manual registry editing.</li>
+    </ul>
+
+    <h2>How It Was Made</h2>
+    <p>The script utilizes Python's <code>winreg</code> module to interact with the Windows Registry, <code>ctypes</code> for administrative privilege checks, and <code>subprocess</code> to execute system commands. By automating these tasks, <strong>ContextMenuFixer</strong> simplifies the repair process for users experiencing right-click menu issues.</p>
+
+    <h2>How to Use It</h2>
+
+    <h3>Requirements</h3>
+    <p>Ensure you have Python installed on your system. If not, download it from <a href="https://www.python.org/downloads/">Python.org</a>.</p>
+
+    <h3>Installation & Setup</h3>
+    <pre><code>git clone https://github.com/yourusername/ContextMenuFixer.git</code></pre>
+    <pre><code>cd ContextMenuFixer</code></pre>
+    <pre><code>python -m venv venv
+venv\Scripts\activate</code></pre>
+
+    <h3>Running the Script</h3>
+    <pre><code>python fix_right_click_menu.py</code></pre>
+    <p>Follow the on-screen instructions:</p>
+    <ol>
+        <li>The script will create a backup of relevant registry keys.</li>
+        <li>Apply registry fixes.</li>
+        <li>Clear the icon cache.</li>
+        <li>Run the System File Checker.</li>
+        <li>Prompt to restart your computer.</li>
+    </ol>
+
+    <h2>Customer Usage Example</h2>
+    <p><strong>Scenario:</strong> A user notices that the "New" option is missing from the right-click context menu on the desktop, disrupting their workflow.</p>
+    <p><strong>Solution:</strong></p>
+    <ol>
+        <li>Download <strong>ContextMenuFixer</strong> from the GitHub repository.</li>
+        <li>Run the script with administrative privileges.</li>
+        <li>Follow the prompts to backup registry settings and apply fixes.</li>
+        <li>Restart the computer when prompted.</li>
+    </ol>
+    <p>After these steps, the user observes that the "New" option is restored in the context menu, resolving the issue and restoring normal functionality.</p>
+
+    <p><em>Note:</em> Always ensure you understand the changes being made to your system. It's recommended to create backups before performing system modifications.</p>
+</body>
+</html>
