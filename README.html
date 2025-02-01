@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ContextMenuFixer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #2e2e2e;
@@ -25,6 +26,44 @@
         }
         h1, h2, h3 {
             color: #ffffff;
+        }
+        .support-section {
+            background-color: #1e1e1e;
+            border: 2px solid #1e90ff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
+        }
+        .developer-signature {
+            text-align: center;
+        }
+        .coffee-options {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .coffee-btn {
+            background: linear-gradient(145deg, #1e90ff, #1873cc);
+            color: #dcdcdc;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .coffee-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .dev-signature {
+            font-family: 'Dancing Script', cursive;
+            color: #1e90ff;
+            margin-top: 1.5rem;
+            opacity: 0.8;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -80,6 +119,20 @@ venv\Scripts\activate</code></pre>
         <li>Restart the computer when prompted.</li>
     </ol>
     <p>After these steps, the user observes that the "New" option is restored in the context menu, resolving the issue and restoring normal functionality.</p>
+
+    <div class="support-section">
+        <h2>Support the Developer</h2>
+        <div class="developer-signature">
+            <p>👋 Hi, I'm KayWat! I created this tool to help users fix their Windows context menu issues.</p>
+            <p>If you find this tool valuable, consider supporting my work:</p>
+            <div class="coffee-options">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=1coffee" class="coffee-btn">☕ One Coffee ($6)</a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=2coffees" class="coffee-btn">☕☕ Two Coffees ($12)</a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=3coffees" class="coffee-btn">☕☕☕ Three Coffees ($24)</a>
+            </div>
+            <p class="dev-signature">Made with ❤️ by KayWat</p>
+        </div>
+    </div>
 
     <p><em>Note:</em> Always ensure you understand the changes being made to your system. It's recommended to create backups before performing system modifications.</p>
 </body>
